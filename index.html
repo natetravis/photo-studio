@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional photography studio specializing in portraits, weddings, and commercial photography">
+    <title>Luminance Studio | Professional Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preload hero image for better performance -->
+    <link rel="preload" as="image" href="assets/hero-image.jpg">
+    <!-- Font preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-wrapper container">
+        <div class="logo">
+                <img src="assets/logo.svg" alt="Luminance Studio Logo" width="150" height="50">
+        </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="cta-button">Book Now</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content container">
+            <h1>Capturing Life's Beautiful Moments</h1>
+            <p class="hero-subtitle">Professional photography that tells your unique story</p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="primary-button">View Our Work</a>
+                <a href="#contact" class="secondary-button">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Our Portfolio</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="weddings">Weddings</button>
+                    <button class="filter-btn" data-filter="portraits">Portraits</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Gallery items with lazy loading -->
+                    <figure class="portfolio-item" data-category="weddings">
+                        <img src="placeholder.jpg" data-src="wedding-1.jpg" alt="Wedding Photography" loading="lazy">
+                        <figcaption>Summer Wedding Collection</figcaption>
+                    </figure>
+                    <!-- Add more portfolio items -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Photography Services</h2>
+                <p class="section-subtitle">Capturing your special moments with professional excellence</p>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Wedding Photography</h3>
+                        <div class="service-price">
+                            <span class="price">$2,500</span>
+                            <span class="duration">/ Full Day</span>
+                        </div>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 8 Hours Coverage</li>
+                                <li><i class="fas fa-check"></i> 2 Professional Photographers</li>
+                                <li><i class="fas fa-check"></i> 500+ Edited Photos</li>
+                                <li><i class="fas fa-check"></i> Online Gallery</li>
+                                <li><i class="fas fa-check"></i> Engagement Session</li>
+                                <li><i class="fas fa-check"></i> High-Resolution Files</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="service-cta">Book Now</a>
+                    </div>
+
+                    <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="featured-tag">Most Popular</div>
+                        <div class="service-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Portrait Session</h3>
+                        <div class="service-price">
+                            <span class="price">$350</span>
+                            <span class="duration">/ 2 Hours</span>
+                        </div>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 2 Hours Session</li>
+                                <li><i class="fas fa-check"></i> Multiple Outfits</li>
+                                <li><i class="fas fa-check"></i> 50+ Edited Photos</li>
+                                <li><i class="fas fa-check"></i> Online Gallery</li>
+                                <li><i class="fas fa-check"></i> Print Release</li>
+                                <li><i class="fas fa-check"></i> Location Consulting</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="service-cta featured">Book Now</a>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Commercial Photography</h3>
+                        <div class="service-price">
+                            <span class="price">$800</span>
+                            <span class="duration">/ Half Day</span>
+                        </div>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 4 Hours Coverage</li>
+                                <li><i class="fas fa-check"></i> Product Photography</li>
+                                <li><i class="fas fa-check"></i> Brand Story Shots</li>
+                                <li><i class="fas fa-check"></i> Commercial License</li>
+                                <li><i class="fas fa-check"></i> Quick Turnaround</li>
+                                <li><i class="fas fa-check"></i> Marketing Ready Files</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="service-cta">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Us</h2>
+                        <p>With over 15 years of experience, we specialize in creating timeless photographs that capture the essence of your special moments.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/team.jpg" alt="Our Photography Team" width="500" height="400">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Client Testimonials</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"An amazing experience from start to finish. The photos exceeded our expectations!"</p>
+                            <div class="client-info">
+                                <img src="assets/client1.jpg" alt="Sarah Johnson" class="client-image">
+                                <div class="client-details">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Wedding Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more testimonials -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form" id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="commercial">Commercial Shoot</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h3>Location</h3>
+                            <p>Shule Road<br>Nairobi, Kenya</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Contact</h3>
+                            <p>Email: info@luminancestudio.com<br>Phone: (123) 456-7890</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo-white.svg" alt="Luminance Studio Logo" width="120" height="40">
+                    <p>Capturing moments that last forever</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#weddings">Weddings</a></li>
+                            <li><a href="#portraits">Portraits</a></li>
+                            <li><a href="#commercial">Commercial</a></li>
+                            <li><a href="#events">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luminance Studio. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
